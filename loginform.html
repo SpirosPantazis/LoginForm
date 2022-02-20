@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="loginformStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://css.gg/more-alt.css' rel='stylesheet'>
+    <script src="loginformScript.js" defer></script>
+</head>
+<body>
+        <form method="get">
+    
+            <div class="container">
+            <header><h1>Login Form</h1></header>
+            <span>Hello,</span>
+            <p>Enter user name and Password.</p>
+            <input class="name" id="nameValue" type="text" name="fullname" placeholder="Enter Name" required>
+            <input class="pswd" id="pswdValue" type="password" placeholder="Enter Password" required>
+            <input class="submitButtonInput" id="submitBtn" type="submit" value="Submit" onclick="openUrl()">
+            <!--<i class="material-icons" onclick="showUserNamePswd()">computer</i> -->
+            <i class="gg-more-alt" id="userNamePswd" onclick="showUserNamePswd()"></i>
+            <button class="sumbitButton" value="submit" onclick="openUrl()">Submit</button>
+        </div>
+        </form>  
+        
+</body>
+</html>
