@@ -9,7 +9,7 @@ function openUrl(){
     }
 
 function getUserNamePswd() {
-    alert("User name: " + userName + " Password: " + userPassword);
+    return alert("User name: " + userName + " Password: " + userPassword);
 }
     
 //window.open("https://www.google.com"); } in a new tab    
