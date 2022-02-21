@@ -12,18 +12,18 @@
 </head>
 <body>
     
-        <form>
+        <form method="post" onsubmit="return openUrl()">
             <div class="container">
             <header><h1>Login Form</h1></header>
             <span>Hello,</span>
             <p>Enter user name and Password.</p>
-            <input class="name" id="nameValue" type="text" name="fullname" placeholder="Enter Name" required>
-            <input class="pswd" id="pswdValue" type="password" placeholder="Enter Password" required>
-            <input class="submitButtonInput" id="submitBtn" type="submit" value="Submit" onclick="openUrl()">
-            <!--<i class="material-icons" onclick="showUserNamePswd()">computer</i> -->
-            <i class="gg-more-alt" id="userNamePswdIcon" onclick="showUserNamePswd()"></i>
+            <input class="name" type="text" name="fullname" placeholder="Enter FullName" required>
+            <input class="pswd" type="password" name="password" placeholder="Enter Password" required>     
+            <input class="submitButtonInput" type="submit" value="Submit">
+            <i class="gg-more-alt" id="userNamePswdIcon" onclick="getUserNamePswd()"></i>
         </div>
         </form>  
-        
+        <!--<input class="submitButtonInput" id="submitBtn" type="submit" value="Submit" onclick="openUrl()">-->
+        <!--<i class="material-icons" onclick="showUserNamePswd()">computer</i> -->
 </body>
 </html>

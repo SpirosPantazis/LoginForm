@@ -2,14 +2,18 @@ var userName = "SpirosPantazis";
 var userPassword = "123456789";
 
 function openUrl(){
-    var succesName = document.getElementById("nameValue").value;
-    var succesPswd = document.getElementById('pswdValue').value;
-    if(userName == succesName && userPassword === succesPswd) { window.open("https://www.google.com"); } //in a new tab    
-}
+    var succesName = document.getElementsByName("fullname")[0].value;
+    var succesPswd = document.getElementsByName('password')[0].value;
+     if(userName == succesName && userPassword === succesPswd) { return window.open("https://www.google.com",);} 
+     return false; 
+    }
 
-function showUserNamePswd() {
+function getUserNamePswd() {
     alert("User name: " + userName + " Password: " + userPassword);
 }
+    
+//window.open("https://www.google.com"); } in a new tab    
+
 
 //in the same tab
 //window.location.href = "https://www.google.com"; 
